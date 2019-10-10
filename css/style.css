@@ -15,11 +15,11 @@ body {
 }
 
 .header:after {
-	width: 100vw;
-	height: 40px;
-	position: absolute;
-	content: "";
-    background: linear-gradient(104deg, transparent 437px, #004299 0%);
-    top: 30px;
-    left: 0px;
+  width: 100vw;
+  height: 40px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(104deg, transparent 437px, #004299 0%);
+  top: 30px;
+  left: 0px;
 }
