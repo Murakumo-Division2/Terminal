@@ -1,3 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background: #003366 repeat url("../img/Test9.png");
+}
+
+div.sample {
+  width: auto; height: 70px;
+  border-bottom: 2px solid #004299;
+  background: linear-gradient(90deg, #003478 0%, #000000 100%) no-repeat 50% 0%;
 }
