@@ -17,7 +17,7 @@ body {
   width: auto; height: 70px;
   border-bottom: 2px solid #004299;
   background: linear-gradient(90deg, #003478 0vw, rgba(0, 0, 0, 0.5) 100vw);
-/*  clip-path: polygon(0 0, 100% 0, 100% 32px, 452px 32px, 442px 100%, 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 32px, 452px 32px, 442px 100%, 0 100%);
 }
 
 /* .test:after {
