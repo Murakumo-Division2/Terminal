@@ -7,20 +7,14 @@ body {
   background: #003366 repeat url("../img/Test9.png");
 }
 
-.sample {
-  width: auto; height: 70px;
-  border-bottom: 2px solid #004299;
-  background: linear-gradient(90deg, #003478, rgba(0, 0, 0, 0.5));
-}
-
-.test {
+.header {
   width: auto; height: 70px;
   border-bottom: 2px solid #004299;
   background: linear-gradient(90deg, #003478 0vw, rgba(0, 0, 0, 0.5) 100vw);
   clip-path: polygon(0 0, 100% 0, 100% 32px, 452px 32px, 442px 100%, 0 100%);
 }
 
-.test:after {
+.header:after {
 	width: 100vw;
 	height: 40px;
 	position: absolute;
@@ -28,25 +22,4 @@ body {
     background: linear-gradient(104deg, transparent 437px, #004299 0%);
     top: 30px;
     left: 0px;
-}
-
-/* 星型(6点) */
-#star-six {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid #81C7D4;
-	position: relative;
-}
-#star-six:after {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid #81C7D4;
-	position: absolute;
-	content: "";
-	top: 30px;
-	left: -50px;
 }
