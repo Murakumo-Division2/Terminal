@@ -20,15 +20,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 32px, 452px 32px, 442px 100%, 0 100%);
 }
 
-/* .test:after {
+.test:after {
 	width: 100vw;
 	height: 40px;
 	position: absolute;
 	content: "";
-    background: #004299;
-    transform: skewX(-14deg);
-	top: 30px;
-	left: 445px;
+    background: linear-gradient(104deg, transparent 437px, #004299 0%);
+    top: 30px;
+    left: 0px;
 }
 
 /* 星型(6点) */
