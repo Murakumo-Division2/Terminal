@@ -10,16 +10,9 @@ body {
 .header {
   width: auto; height: 70px;
   border-bottom: 2px solid #123d84;
-  background: url("../img/TERMINAL2.png") no-repeat, linear-gradient(90deg, #0E2A5A 0vw, rgba(0, 0, 0, 0.5) 100vw);
+  background:
+    url("../img/TERMINAL2.png") no-repeat,
+    linear-gradient(104deg, transparent 437px, #123d84 0%) no-repeat 50% 100% / 100% 40px,
+    linear-gradient(90deg, #0E2A5A, rgba(0, 0, 0, 0.5));
   clip-path: polygon(0 0, 100% 0, 100% 32px, 452px 32px, 442px 100%, 0 100%);
-}
-
-.header:after {
-  width: 100vw;
-  height: 40px;
-  position: absolute;
-  content: "";
-  background: linear-gradient(104deg, transparent 437px, #123d84 0%);
-  top: 30px;
-  left: 0px;
 }
