@@ -46,13 +46,15 @@ body {
 .LOG {top: 28px; left: 420px;}
 
 .effect {
-  width: 17em; height: auto;
+  width: 17em; height: 334px;
   padding: 29px;
   background: url("../img/effect.png") no-repeat;
   font-size: 13px;
+  line-height: 21px;
 }
 
 .effect h1 {
+  height: 41px;
   font-size: 21px;
   line-height: 1em;
 }
