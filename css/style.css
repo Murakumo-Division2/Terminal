@@ -9,7 +9,7 @@ body {
 
 .header {
   position: relative;
-  width: auto; height: auto;
+  width: auto; height: 180px;
 }
 
 .back {
