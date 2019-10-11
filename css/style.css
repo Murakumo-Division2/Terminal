@@ -47,7 +47,7 @@ body {
 
 .effect {
   width: 17em; height: auto;
-  padding-top: 29px; padding-left: 20px; padding-right: 23px;  padding-bottom: 18px;
+  padding: 29px;
   background: url("../img/effect.png") no-repeat;
   font-size: 13px;
 }
@@ -55,4 +55,9 @@ body {
 .effect h1 {
   font-size: 21px;
   line-height: 1em;
+}
+
+.effect span {
+  display: inline-block;
+  width: 8.5em;
 }
