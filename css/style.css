@@ -5,6 +5,7 @@
 
 body {
   background: #003366 repeat url("../img/Test9.png");
+  color: #fff;
 }
 
 .header {
@@ -18,7 +19,7 @@ body {
   background:
     url("../img/TERMINAL.png") no-repeat,
     linear-gradient(104deg, transparent 363px, #123d84 0%) no-repeat 50% 100% / 100% 40px,
-    linear-gradient(90deg, #0E2A5A, rgba(0, 0, 0, 0.5));
+    linear-gradient(90deg, #0e2a5a, rgba(0, 0, 0, 0.5));
   clip-path: polygon(0 0, 100% 0, 100% 32px, 376px 32px, 366px 100%, 0 100%);
   z-index: 0;
 }
@@ -43,3 +44,15 @@ body {
 
 .DATA {top: 84px; left: 364px;}
 .LOG {top: 28px; left: 420px;}
+
+.effect {
+  width: 17em; height: auto;
+  padding-top: 29px; padding-left: 20px; padding-right: 23px;  padding-bottom: 18px;
+  background: url("../img/effect.png") no-repeat;
+  font-size: 13px;
+}
+
+.effect h1 {
+  font-size: 21px;
+  line-height: 1em;
+}
