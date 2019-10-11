@@ -12,7 +12,7 @@ body {
   width: auto; height: auto;
 }
 
-.header .back {
+.back {
   width: auto; height: 70px;
   border-bottom: 2px solid #123d84;
   background:
@@ -20,10 +20,18 @@ body {
     linear-gradient(104deg, transparent 437px, #123d84 0%) no-repeat 50% 100% / 100% 40px,
     linear-gradient(90deg, #0E2A5A, rgba(0, 0, 0, 0.5));
   clip-path: polygon(0 0, 100% 0, 100% 32px, 452px 32px, 442px 100%, 0 100%);
+  z-index: 0;
 }
 
-.header .menu {
+.menu {
   position: absolute;
-  top: 0px;
-  left: 440px;
+  width: 72px; height: 72px;
+  background: rgba(0, 0, 0, 0.5);
+  top: 71px;
+  left: 450px;
+  transform: rotate(45deg);
+}
+
+.menu:hover {
+  background: url("../img/frame.png") no-repeat;
 }
