@@ -3,8 +3,7 @@
   padding: 0px;
 }
 
-body {
-  background: #003366 repeat url("../img/Test9.png");
+body { background: url("../img/Test10.png") repeat, url("../img/murakumoC.png") no-repeat calc(50vw - 300px) calc(50vh - 300px), #000;
   color: #fff;
 }
 
