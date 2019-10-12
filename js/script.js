@@ -1,6 +1,5 @@
-// .dragをdrag可能に
-$(function() {
-  $(".drag").draggable({
+jQuery(function() {
+  jQuery(".drag").draggable({
     handle: ".handle"
   });
 });
