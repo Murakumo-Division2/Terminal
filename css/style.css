@@ -3,8 +3,13 @@
   padding: 0px;
 }
 
-body { background: url("../img/Test10.png") repeat, url("../img/murakumoC.png") no-repeat calc(50vw - 300px) calc(50vh - 300px), #000;
+body { 
+  background:
+    url("../img/Test10.png") repeat,
+    url("../img/murakumoC.png") no-repeat calc(50vw - 300px) calc(50vh - 300px),
+    #000;
   color: #fff;
+  overflow: hidden;
 }
 
 .header {
@@ -43,6 +48,25 @@ body { background: url("../img/Test10.png") repeat, url("../img/murakumoC.png") 
 
 .DATA {top: 84px; left: 364px;}
 .LOG {top: 28px; left: 420px;}
+
+/*フローティングウィンドウ*/
+.NAV {
+  width: 250px;
+  position: absolute;
+  right: 0px;
+}
+
+.NAV img {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.NAV .HN {
+  color: #99BBFF;
+}
+
+.NAV span {
+  padding-left: 26px;
+}
 
 .effect {
   width: 17em; height: 334px;
