@@ -46,25 +46,34 @@ body {
   transform: rotate(-45deg);
 }
 
-.DATA {top: 84px; left: 364px;}
-.LOG {top: 28px; left: 420px;}
+.menu.DATA {top: 84px; left: 364px;}
+.menu.LOG {top: 28px; left: 420px;}
 
-/*フローティングウィンドウ*/
 .NAV {
-  width: 250px;
+  width: 350px; height: 240px;
   position: absolute;
   right: 0px;
 }
 
 .NAV img {
-  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 0px;
 }
 
-.NAV .HN {
+.NAV .chat {
+  width: 350px;
+  position: absolute;
+  left: 0px; bottom: 0px;
+  background: linear-gradient(transparent, black 16px);
+}
+
+.NAV .chat div {
+  border-bottom: solid 1px #aaa;
   color: #99BBFF;
+  line-height: 1em;
 }
 
-.NAV span {
+.NAV .chat span {
   padding-left: 26px;
 }
 
