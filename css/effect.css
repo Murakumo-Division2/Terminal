@@ -6,9 +6,11 @@
 body {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
+  font-family: meiryo;
 }
 
 .effect {
+  position: relative;
   width: 17em; height: 334px;
   padding: 30px 25px 20px 20px;
   margin: 18px 7px;
@@ -16,15 +18,56 @@ body {
   float: left;
   font-size: 13px;
   line-height: 21px;
+  word-break: break-all;
 }
 
 .effect h1 {
   height: 42px;
   font-size: 21px;
+  font-feature-settings: "palt" 1;
   line-height: 1em;
+}
+
+.ruby {
+  position: relative;
+}
+
+[data-ruby] {
+  position: absolute;
+  left: 0px; right: 0px;
+  width: 92%;
+  margin: auto;
+  font-size: 10px;
+}
+
+[data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: -18px;
+  left: 0px; right: 0px;
+  text-align-last: justify;
 }
 
 .effect span {
   display: inline-block;
-  width: 8.5em;
+  white-space: nowrap;
+  transform-origin: left;
+}
+
+.effect .quote {
+  width: 0.5em;
+}
+
+.effect .open {
+  transform: translateX(-0.5em);
+}
+
+
+.effect .data {
+  position: absolute;
+  left: calc(8.5em + 20px);
+}
+
+.effect .text {
+  text-align: justify;
 }
