@@ -25,7 +25,6 @@ body {
     linear-gradient(104deg, transparent 363px, #123d84 0%) no-repeat 50% 100% / 100% 40px,
     linear-gradient(90deg, #0e2a5a, rgba(0, 0, 0, 0.5));
   clip-path: polygon(0 0, 100% 0, 100% 32px, 376px 32px, 366px 100%, 0 100%);
-  z-index: 0;
 }
 
 .menu {
@@ -36,9 +35,7 @@ body {
   overflow: hidden;
 }
 
-.menu:hover {
-  background: url("../img/frame.png") no-repeat;
-}
+.menu:hover {background: url("../img/frame.png") no-repeat;}
 
 .menu img {
   position: absolute;
@@ -52,7 +49,7 @@ body {
 .NAV {
   width: 350px; height: 240px;
   position: absolute;
-  right: 0px; bottom: 0px;
+  bottom: 0px; right: 0px;
   z-index: 1;
 }
 
