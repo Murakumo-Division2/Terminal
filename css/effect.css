@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.effect {
+  width: 17em; height: 334px;
+  padding: 30px 25px 20px 20px;
+  margin: 18px 7px;
+  background: url("../img/effect.png") no-repeat;
+  float: left;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.effect h1 {
+  height: 42px;
+  font-size: 21px;
+  line-height: 1em;
+}
+
+.effect span {
+  display: inline-block;
+  width: 8.5em;
+}
