@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background:
+    url("../img/Test10.png") repeat,
+    url("../img/murakumoC.png") no-repeat calc(50vw - 300px) calc(50vh - 300px),
+    #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  width: auto; height: 180px;
+}
+
+.banner {
+  width: auto; height: 70px;
+  border-bottom: 2px solid #123d84;
+  background:
+    url("../img/TERMINAL.png") no-repeat,
+    linear-gradient(104deg, transparent 363px, #123d84 0%) no-repeat 50% 100% / 100% 40px,
+    linear-gradient(90deg, #0e2a5a, rgba(0, 0, 0, 0.5));
+  clip-path: polygon(0 0, 100% 0, 100% 32px, 376px 32px, 366px 100%, 0 100%);
+  z-index: 0;
+}
+
+.menu {
+  position: absolute;
+  width: 72px; height: 72px;
+  background: rgba(0, 0, 0, 0.5);
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.menu:hover {
+  background: url("../img/frame.png") no-repeat;
+}
+
+.menu img {
+  position: absolute;
+  top: -15px; left: -15px;
+  transform: rotate(-45deg);
+}
+
+.menu.DATA {top: 84px; left: 364px;}
+.menu.LOG {top: 28px; left: 420px;}
+
+.NAV {
+  width: 350px; height: 240px;
+  position: absolute;
+  right: 0px; bottom: 0px;
+  z-index: 1;
+}
+
+.NAV img {
+  position: absolute;
+  right: 0px;
+}
+
+.NAV .chat {
+  width: 350px;
+  position: absolute;
+  left: 0px; bottom: 0px;
+  background: linear-gradient(transparent, black 16px);
+}
+
+.NAV .chat div {
+  border-bottom: solid 1px #aaa;
+  color: #99BBFF;
+  line-height: 1em;
+}
+
+.NAV .chat span {
+  padding-left: 26px;
+}
+
+iframe#display {
+  width: calc(100vw - 390px); height: calc(100vh - 204px);
+  border: none;
+  margin: 10px;
+  position: absolute;
+  right: 0px; bottom: 0px;
+  overflow: scroll;
+}
