@@ -3,16 +3,43 @@
   padding: 0px;
 }
 
+@font-face {
+  font-family: "YakuHan Meiryo";
+  src: url("../font/YakuHanMeiryo.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "YakuHan Meiryo";
+  src: url("../font/YakuHanMeiryoBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 body {
-  background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-family: meiryo;
+  font-family: "YakuHan Meiryo", "Meiryo";
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+  border: 4px solid transparent;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+::-webkit-scrollbar-thumb{
+  background: transparent;
+  border: 4px solid transparent;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 2px #fff;
 }
 
 .effect {
   position: relative;
   width: 17em; height: 334px;
-  padding: 30px 25px 20px 20px;
+  padding: 28px 25px 22px 20px;
   margin: 18px 7px;
   background: url("../img/effect.png") no-repeat;
   float: left;
@@ -24,7 +51,6 @@ body {
 .effect h1 {
   height: 42px;
   font-size: 21px;
-  font-feature-settings: "palt" 1;
   line-height: 1em;
 }
 
@@ -43,31 +69,36 @@ body {
 [data-ruby]::before {
   content: attr(data-ruby);
   position: absolute;
-  top: -18px;
+  top: -17px;
   left: 0px; right: 0px;
   text-align-last: justify;
 }
 
+.effect .colon {
+  margin: 2px;
+}
+
 .effect span {
-  display: inline-block;
   white-space: nowrap;
+}
+
+.effect span[style] {
+  display: inline-block;
   transform-origin: left;
 }
 
-.effect .quote {
-  width: 0.5em;
-}
-
-.effect .open {
-  transform: translateX(-0.5em);
-}
-
-
-.effect .data {
+.effect div {
+  display: inline-block;
   position: absolute;
   left: calc(8.5em + 20px);
 }
 
 .effect .text {
+  position: static;
+  width: 17em;
   text-align: justify;
+}
+
+.effect .text b {
+  text-align: start;
 }
