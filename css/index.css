@@ -80,12 +80,22 @@ iframe#display {
   margin: 10px;
   position: absolute;
   right: 0px; bottom: 0px;
-  background: rgba(0, 0, 0, 0.5);
-  overflow: scroll;
+}
+
+input[id^="list"]{
+display: none;
+}
+
+input[id^="list"]:checked + div {
+  display: inline-block;
+}
+
+input[id^="list"]:not(:checked) + div {
+  display: none;
 }
 
 .list {
-  width: 360px; height: calc(100vh - 207px);
+  width: 175px; height: calc(100vh - 207px);
   padding-top: 3px;
   margin: 10px;
   position: absolute;
@@ -94,11 +104,16 @@ iframe#display {
   overflow: hidden auto;
 }
 
+.list.sub {
+  left: 185px;
+}
+
 .list .item {
   display: inline-block;
   width: 100%;
   padding-left: 10px;
   margin-top: 3px;
+  font-weight: bold;
 }
 
 .list .item:hover {
