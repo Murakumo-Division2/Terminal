@@ -13,17 +13,34 @@
   <div class="header">
     <div class="banner"></div>
     <span class="menu DATA">
-      <a target="display" href="effect.html"><img src="img/DATA.png" alt="DATA"></a>
+      <label for="list-DATA"><img src="img/DATA.png" alt="DATA"></label>
     </span>
     <span class="menu LOG">
-      <a href="https://www.dropbox.com/sh/019sexd6gs05zdb/AABIBcrSNcy0ZEYAYLeHOOg7a?dl=0"><img src="img/LOG.png" alt="LOG"></a>
+      <label for="list-LOG"><img src="img/LOG.png" alt="LOG"></label>
     </span>
   </div>
 
-  <div class="list">
-    <a class="item" target="display" href="effect.html"><b>エフェクト</b></a>
-    <a class="item" target="display" href="effect.html"><b>装備</b></a>
-    あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ
+  <input type="radio" name="list" id="list-DATA"><div>
+    <div class="list">
+      <label for="list-DATA-rucier" class="item">ルシェ</label>
+    </div>
+    <input type="radio" name="DATA" id="list-DATA-rucier"><div class="list sub">
+      <a class="item" target="display" href="rucier/rucier-effect.html">エフェクト</a>
+      <a class="item" target="display" href="rucier-Dlois.html">Dロイス</a>
+    </div>
+  </div>
+
+  <input type="radio" name="list" id="list-LOG"><div>
+    <div class="list">
+      <label for="list-LOG-2-PROLOGUE" class="item">Ⅱ PROLOGUE</label>
+    </div>
+    <input type="radio" name="LOG" id="list-LOG-2-PROLOGUE"><div class="list sub">
+      <a class="item" target="display" href="2-PROLOGUE/2-PROLOGUE-main.html"><b>メイン</b></a>
+      <a class="item" target="display" href="2-PROLOGUE/2-PROLOGUE-RP.html"><b>RP用</b></a>
+      <a class="item" target="display" href="2-PROLOGUE/2-PROLOGUE-chat.html"><b>雑談</b></a>
+      <a class="item" target="display" href="2-PROLOGUE/2-PROLOGUE-meeting.html"><b>相談</b></a>
+      <a class="item" target="display" href="2-PROLOGUE/2-PROLOGUE-GM.html"><b>GM</b></a>
+    </div>
   </div>
 
   <iframe id="display" name="display"></iframe>
