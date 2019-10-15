@@ -13,6 +13,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  cursor: default;
+}
+
 a:link {
   color: #fff;
   text-decoration: none;
@@ -117,7 +121,7 @@ input[id^="list"]:not(:checked) + div {
 }
 
 .list .item:hover {
-  color: #123d84;
+  color: #049;
   background: linear-gradient(-90deg, transparent 27px, #fff 0%) no-repeat;
 }
 
