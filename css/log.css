@@ -10,7 +10,7 @@ html {
 body {
   width: calc(100vw - 16px); height: calc(100vh - 16px);
   padding: 8px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   overflow: hidden auto;
 }
 
