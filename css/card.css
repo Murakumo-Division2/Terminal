@@ -20,21 +20,21 @@ html {
 }
 
 @font-face {
-  font-family: "NotoSansCJKjp";
-  src: url("../font/NotoSansCJKjp-Regular.otf") format("opentype");
+  font-family: "NotoSansCJKjpSub";
+  src: url("../font/NotoSansCJKjpSub-Regular.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
-font-family: "NotoSansCJKjp";
-src: url("../font/NotoSansCJKjp-Bold.otf") format("opentype");
-font-weight: 700;
+  font-family: "NotoSansCJKjpSub";
+  src: url("../font/NotoSansCJKjpSub-Bold.otf") format("opentype");
+  font-weight: 700;
 }
 
 @font-face {
-font-family: "NotoSansCJKjp";
-src: url("../font/NotoSansCJKjp-Black.otf") format("opentype");
-font-weight: 900;
+  font-family: "NotoSansCJKjpSub";
+  src: url("../font/NotoSansCJKjpSub-Black.otf") format("opentype");
+  font-weight: 900;
 }
 
 ::-webkit-scrollbar{
@@ -138,7 +138,7 @@ body {
   background: url("../img/card-test.png") no-repeat;
   color: #fff;
   float: left;
-  font-family: YakuHanJPs_Noto, "NotoSansCJKjp";
+  font-family: "NotoSansCJKjpSub", "Noto Sans CJK JP";
   font-size: 14px;
   font-weight: 400;
   font-feature-settings: "palt" 1;
