@@ -7,18 +7,6 @@ html {
   overflow: hidden;
 }
 
-@font-face {
-  font-family: "NotoSansCJKjp";
-  src: url("../font/NotoSansCJKjp-Regular.otf") format("opentype");
-  font-weight: 400;
-}
-
-@font-face {
-font-family: "NotoSansCJKjp";
-src: url("../font/NotoSansCJKjp-Bold.otf") format("opentype");
-font-weight: 700;
-}
-
 ::-webkit-scrollbar{
   width: 8px;
 }
@@ -41,7 +29,7 @@ body {
   width: 100vw; height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-family: "NotoSansCJKjp";
+  font-family: "Noto Sans CJK JP";
   overflow: hidden auto;
   font-feature-settings: "palt" 1;
 }
