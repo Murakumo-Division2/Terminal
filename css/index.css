@@ -4,6 +4,11 @@
   border: 0px;
 }
 
+@font-face {
+  font-family: "MurakumoSystem";
+  src: url("../font/MurakumoSystem.ttf") format("truetype");
+}
+
 body {
   background:
     url("../img/Test10.png") repeat,
@@ -87,7 +92,7 @@ iframe#display {
 }
 
 input[id^="list"]{
-display: none;
+  display: none;
 }
 
 input[id^="list"]:checked + div {
@@ -98,41 +103,56 @@ input[id^="list"]:not(:checked) + div {
   display: none;
 }
 
-.list {
-  width: 175px; height: calc(100vh - 207px);
-  padding-top: 3px;
-  margin: 10px;
+input[name="list"] + div {
+  width: 370; height: calc(100vh - 194px);
+  margin: 5px;
   position: absolute;
   left: 0px; bottom: 0px;
+}
+
+[data-list] {
+  width: 175px; height: calc(100vh - 206px);
+  padding-top: 2px;
+  margin: 5px;
+  float: left;
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden auto;
 }
+[data-list]::before {
+  display: inline-block;
+  content: attr(data-list)"";
+  padding: 3px 3px 0px 6px;
+  position: absolute;
+  top: -11px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "MurakumoSystem";
+  font-size: 11px;
+  color: #586da7;
 
-.list.sub {
-  left: 185px;
 }
 
-.list .item {
+[data-list] .item {
   display: inline-block;
   width: 100%;
   padding-left: 10px;
   margin-top: 3px;
+  position: relative;
   font-weight: bold;
 }
 
-.list .item:hover {
+[data-list] .item:hover {
   color: #049;
   background: linear-gradient(-90deg, transparent 27px, #fff 0%) no-repeat;
 }
 
-.list .item:hover::after {
+[data-list] .item:hover::after {
   content: "";
   width: 0; height: 0;
   border-top: 12px solid transparent;
 	border-bottom: 12px solid transparent;
 	border-left: 12px solid #fff;
   position: absolute;
-  right: 5px;
+  right: 15px;
 }
 
 
