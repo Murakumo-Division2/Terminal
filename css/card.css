@@ -8,33 +8,9 @@ html {
 }
 
 @font-face {
-  font-family: "YakuHan Meiryo";
-  src: url("../font/YakuHanMeiryo.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "YakuHan Meiryo";
-  src: url("../font/YakuHanMeiryoBold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "NotoSansCJKjpSub";
-  src: url("../font/NotoSansCJKjpSub-Regular.otf") format("opentype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "NotoSansCJKjpSub";
-  src: url("../font/NotoSansCJKjpSub-Bold.otf") format("opentype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "NotoSansCJKjpSub";
-  src: url("../font/NotoSansCJKjpSub-Black.otf") format("opentype");
-  font-weight: 900;
+  font-family: "NotoSansCJKjpSubDL";
+  src: url("../font/NotoSansCJKjpSubDL.otf") format("opentype");
+  font-weight: 350;
 }
 
 ::-webkit-scrollbar{
@@ -59,25 +35,28 @@ body {
   width: 100vw; height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-family: "YakuHan Meiryo", "Meiryo";
+  font-family: "NotoSansCJKjpSubDL", "Noto Sans CJK JP";
   overflow: hidden auto;
 }
 
 .card {
   position: relative;
-  width: 17em; height: 334px;
-  padding: 28px 25px 22px 20px;
+  width: 221px; height: 334px;
+  padding: 28px 26px 22px 19px;
   margin: 18px 7px;
   background: url("../img/card.png") no-repeat;
   float: left;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 350;
   line-height: 21px;
+  font-feature-settings: "palt" 1;
   word-break: break-all;
 }
 
 .card h1 {
-  height: 42px;
-  font-size: 21px;
+  height: 43px;
+  font-size: 22px;
+  font-weight: 900;
   line-height: 1em;
 }
 
@@ -88,20 +67,20 @@ body {
 [data-ruby] {
   position: absolute;
   left: 0px; right: 0px;
-  width: 92%;
+  width: 90%;
   margin: auto;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 [data-ruby]::before {
   content: attr(data-ruby);
   position: absolute;
-  top: -17px;
+  top: -16px;
   left: 0px; right: 0px;
   text-align-last: justify;
 }
 
-.card .colon {
+.card b:nth-of-type(2n) {
   margin: 2px;
 }
 
@@ -117,66 +96,10 @@ body {
 .card div {
   display: inline-block;
   position: absolute;
-  left: calc(8.5em + 20px);
+  left: 131px;
 }
 
 .card .text {
   position: static;
-  width: 17em;
-  text-align: justify;
-}
-
-.card .text b {
-  text-align: start;
-}
-
-.caption {
-  position: relative;
-  width: 17em; height: 334px;
-  padding: 28px 26px 22px 19px;
-  margin: 18px 7px;
-  background: url("../img/card-test.png") no-repeat;
-  color: #fff;
-  float: left;
-  font-family: "NotoSansCJKjpSub", "Noto Sans CJK JP";
-  font-size: 14px;
-  font-weight: 400;
-  font-feature-settings: "palt" 1;
-  line-height: 21px;
-  word-break: break-all;
-}
-
-.caption h1 {
-  height: 43px;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 1em;
-}
-
-.caption .colon {
-  margin: 2px;
-}
-
-.caption span {
-  white-space: nowrap;
-}
-
-.caption span[style] {
-  display: inline-block;
-  transform-origin: left;
-}
-
-.caption div {
-  display: inline-block;
-  position: absolute;
-  left: calc(8.5em + 12px);
-}
-
-.caption .text {
-  position: static;
   width: 226px;
-}
-
-.caption .text b {
-  text-align: start;
 }
