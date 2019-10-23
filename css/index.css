@@ -60,9 +60,9 @@ a:visited {
   border-bottom: 2px solid #123d84;
   background:
     url("../img/TERMINAL.png") no-repeat,
-    linear-gradient(104deg, transparent 363px, #123d84 0%) no-repeat 50% 100% / 100% 40px,
+    linear-gradient(105deg, transparent 362px, #123d84 363px) no-repeat 50% 100% / 100% 40px,
     linear-gradient(90deg, #0e2a5a, rgba(0, 0, 0, 0.5));
-  clip-path: polygon(0 0, 100% 0, 100% 32px, 376px 32px, 366px 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 32px, 377px 32px, 366px 100%, 0 100%);
 }
 
 .menu {
@@ -84,7 +84,7 @@ a:visited {
 .menu.DATA {top: 84px; left: 364px;}
 .menu.LOG {top: 28px; left: 420px;}
 
-iframe#display {
+iframe[name="display"] {
   width: calc(100vw - 390px); height: calc(100vh - 204px);
   margin: 10px;
   position: absolute;
@@ -118,17 +118,17 @@ input[name="list"] + div {
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden auto;
 }
+
 [data-list]::before {
   display: inline-block;
   content: attr(data-list)"";
-  padding: 3px 3px 0px 6px;
+  padding: 3px 7px 0px 6px;
   position: absolute;
   top: -11px;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(255deg, transparent 4px, rgba(0, 0, 0, 0.5) 5px) no-repeat;
   font-family: "MurakumoSystem";
   font-size: 11px;
   color: #586da7;
-
 }
 
 [data-list] .item {
