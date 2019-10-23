@@ -8,9 +8,15 @@ html {
 }
 
 @font-face {
-  font-family: "NotoSansCJKjpSubDL";
-  src: url("../font/NotoSansCJKjpSubDL.otf") format("opentype");
-  font-weight: 350;
+  font-family: "NotoSansCJKjpSubR";
+  src: url("../font/NotoSansCJKjpSubR.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NotoSansNumR";
+  src: url("../font/NotoSansNumR.ttf") format("truetype");
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar{
@@ -35,7 +41,7 @@ body {
   width: 100vw; height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-family: "NotoSansCJKjpSubDL", "Noto Sans CJK JP";
+  font-family: "NotoSansNumR", "NotoSansCJKjpSubR", "Noto Sans CJK JP";
   overflow: hidden auto;
 }
 
@@ -47,7 +53,7 @@ body {
   background: url("../img/card.png") no-repeat;
   float: left;
   font-size: 14px;
-  font-weight: 350;
+  font-weight: 400;
   line-height: 21px;
   font-feature-settings: "palt" 1;
   word-break: break-all;
@@ -56,7 +62,6 @@ body {
 .card h1 {
   height: 43px;
   font-size: 22px;
-  font-weight: 900;
   line-height: 1em;
 }
 
@@ -80,11 +85,16 @@ body {
   text-align-last: justify;
 }
 
+.card b {
+  font-weight: 500;
+}
+
 .card b:nth-of-type(2n) {
   margin: 2px;
 }
 
 .card span {
+  font-family: "NotoSansNumR",  "Noto Sans CJK JP";
   white-space: nowrap;
 }
 
