@@ -72,3 +72,12 @@ table td:first-child{
   padding-left: 10px;
   text-align:start;
 }
+
+table span {
+  white-space: nowrap;
+}
+
+table span[style] {
+  display: inline-block;
+  transform-origin: left;
+}
