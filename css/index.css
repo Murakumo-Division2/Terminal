@@ -168,19 +168,27 @@ input[name="list"] + div {
   right: 0px;
 }
 
-.NAV .chat {
-  width: 350px;
+.chat {
+  width: calc(100vw - 20px);
+  margin: 0 10px;
+  padding-left: 5px;
   position: absolute;
   left: 0px; bottom: 0px;
   background: linear-gradient(transparent, black 16px);
+  user-select: none;
 }
 
-.NAV .chat div {
+.chat div {
   border-bottom: solid 1px #aaa;
   color: #99BBFF;
   line-height: 1em;
 }
 
-.NAV .chat span {
-  padding-left: 26px;
+.chat b {
+  letter-spacing: -3px;
+  margin-right: 3px;
+}
+
+.chat span {
+  padding-left: 24px;
 }
