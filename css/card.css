@@ -72,7 +72,7 @@ body {
 [data-ruby] {
   position: absolute;
   left: 0px; right: 0px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   font-size: 11px;
 }
@@ -100,8 +100,11 @@ body {
 
 .card span[style] {
   display: inline-block;
-  width: 0px;
   transform-origin: left;
+}
+
+.card span[style]:not([data-ruby]) {
+  width: 0px;
 }
 
 .card div {
