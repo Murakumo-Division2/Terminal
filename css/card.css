@@ -47,8 +47,8 @@ body {
 
 .card {
   position: relative;
-  width: 221px; height: 339px;
-  padding: 23px 26px 22px 19px;
+  width: 226px; height: 339px;
+  padding: 23px 21px 22px 19px;
   margin: 18px 7px;
   background: url("../img/card.png") no-repeat;
   float: left;
@@ -65,11 +65,11 @@ body {
   line-height: 1em;
 }
 
-.ruby {
+.card h1 .ruby {
   position: relative;
 }
 
-[data-ruby] {
+.card h1 [data-ruby] {
   position: absolute;
   left: 0px; right: 0px;
   width: 100%;
@@ -77,12 +77,25 @@ body {
   font-size: 11px;
 }
 
-[data-ruby]::before {
+.card h1 span[data-ruby] {
+  width: calc(100% - 0.4em);
+}
+
+.card h1 [data-ruby]::before {
   content: attr(data-ruby);
   position: absolute;
   top: -16px;
   left: 0px; right: 0px;
   text-align-last: justify;
+}
+
+.card div {
+  display: inline-block;
+}
+
+.card > div {
+  position: absolute;
+  left: 131px;
 }
 
 .card b {
@@ -93,29 +106,30 @@ body {
   margin: 2px;
 }
 
-.card span {
-  font-family: "NotoSansNumR",  "Noto Sans CJK JP";
+.card [style] {
+  display: inline-block;
   white-space: nowrap;
-}
-
-.card span[style] {
-  display: inline-block;
   transform-origin: left;
-}
-
-.card span[style]:not([data-ruby]) {
-  width: 0px;
-}
-
-.card div {
-  display: inline-block;
-  position: absolute;
-  left: 131px;
 }
 
 .card .text {
   position: static;
   width: 226px;
+}
+
+.card .text:not(b)  {
+  text-align: justify;
+}
+
+.card .text div {
+  display: inline;
+  font-family: "NotoSansNumR",  "Noto Sans CJK JP";
+}
+
+.card .text span {
+  display: inline-block;
+  width: 0px;
+  white-space: nowrap;
 }
 
 .card.head2 {
